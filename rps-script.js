@@ -29,7 +29,7 @@ function game() {
     let computerScore = 0
     let counter = 0
     for (let i = 0; i < 5; i++) {
-        const playerSelection = "rock"
+        const playerSelection = prompt("Please make your choice: ")
         const computerSelection = computerPlay();
         counter = playRound(playerSelection, computerSelection)
         if (counter == 1) {
